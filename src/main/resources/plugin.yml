@@ -1,0 +1,4 @@
+name: PlayerMap
+version: '${version}'
+main: de._30p87.playermap.PlayerMap
+api-version: 1.19
