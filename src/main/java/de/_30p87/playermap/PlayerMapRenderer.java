@@ -14,7 +14,7 @@ import java.util.List;
 import static de._30p87.playermap.TimerListener.ticks;
 
 public class PlayerMapRenderer extends MapRenderer {
-    private static int lastTicked;
+    private int lastTicked;
     private final FileConfiguration config;
 
     public PlayerMapRenderer(FileConfiguration config) {
