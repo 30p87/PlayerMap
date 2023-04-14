@@ -8,9 +8,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.map.MapCursor;
 
 public class EntityInfo {
-    public Location location;
-    public String caption;
-    public MapCursor.Type mapCursorsType;
+    public final Location location;
+    public final String caption;
+    public final MapCursor.Type mapCursorsType;
     public EntityInfo(Entity entity, FileConfiguration config) {
         location = entity.getLocation();
         caption = entity instanceof Player && config.getBoolean("display-player-names") ||

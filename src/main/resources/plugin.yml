@@ -2,3 +2,9 @@ name: PlayerMap
 version: '${version}'
 main: de._30p87.playermap.PlayerMap
 api-version: 1.19
+commands:
+  clearmaprenderers:
+    description: Clears all Map views on the Server, note that Default Views will be removed too.
+    usage: /<command>
+    permission: <plugin name>.clearmaprenderers
+    permission-message: You don't have <permission>

@@ -1,15 +1,12 @@
 package de._30p87.playermap;
 
 import com.destroystokyo.paper.event.server.ServerTickEndEvent;
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.map.MapRenderer;
 import org.bukkit.map.MapView;
-
-import java.util.logging.Level;
 
 import static org.bukkit.Bukkit.*;
 

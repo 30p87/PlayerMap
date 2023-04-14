@@ -3,8 +3,10 @@ package de._30p87.playermap;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Objects;
+
 public final class PlayerMap extends JavaPlugin {
-    public FileConfiguration config = getConfig();
+    public final FileConfiguration config = getConfig();
 
     @Override
     public void onEnable() {
@@ -20,5 +22,8 @@ public final class PlayerMap extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new TimerListener(config), this);
         getServer().getPluginManager().registerEvents(new MapInitializeListener(config), this);
+        Objects.requireNonNull(getCommand("clearmaprenderers")).setExecutor(new ClearMapRenderersCommand());
+
+        new ClearRenderers().clearRenderers();
     }
 }
